@@ -11,7 +11,7 @@ def render(config):
 
     if st.button("Get Object"):
 
-        url = generate_download_url(config, "get_object", bucket, key)
+        url = generate_download_url(config, bucket, key)
 
         st.session_state["url"] = url
 

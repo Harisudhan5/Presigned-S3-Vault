@@ -25,7 +25,7 @@ def render(config):
             st.warning("File not selected")
             st.stop()
 
-        url = generate_upload_url(config, "put_object", bucket, key)
+        url = generate_upload_url(config, bucket, key)
 
         resp = requests.put(url, data=file.getvalue())
 

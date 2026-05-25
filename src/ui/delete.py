@@ -13,7 +13,7 @@ def render(config):
 
     if st.button("Delete"):
 
-        url = generate_delete_url(config, "delete_object", bucket, key)
+        url = generate_delete_url(config, bucket, key)
 
         resp = requests.delete(url)
 
